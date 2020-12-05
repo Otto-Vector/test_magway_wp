@@ -1,0 +1,27 @@
+.button-more {
+  display: flex;
+  justify-items: center;
+  justify-content: flex-start;
+
+  @include size(rem(57),rem(15));
+  background-color: $button-more-color;
+  background-image: url("~@images/arrow-right.png");
+  background-position: 93% center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    background-position: 97% center;
+    @include duration($duration/2)
+  }
+
+  &__text {
+    color: whitesmoke;
+    font-family: $tahomaFont;
+    font-size: rem(11);
+    border-right: 2px solid whitesmoke;
+    width: 75%;
+    height: 100%;
+  }
+}

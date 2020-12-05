@@ -1,0 +1,28 @@
+
+.contact-item {
+
+  display: flex;
+  justify-content: left;
+  padding: {
+    bottom: rem(8);
+    top: rem(13);
+    }
+  border-bottom: 1px dotted #999;
+
+  &__icon {
+    flex-basis: rem(25);
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: rem(15);
+  }
+
+  &__text {
+    padding-left: rem(5);
+    font-family: $contactFont;
+    font-size: rem(16);
+  }
+
+  .newFont {
+    font-family: $newFont;
+  }
+}

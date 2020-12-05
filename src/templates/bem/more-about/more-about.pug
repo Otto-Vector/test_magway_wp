@@ -1,0 +1,10 @@
+-
+    let more_about_header = 'WHO WE ARE?';
+    let more_about_text   = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+
+mixin more-about
+    .more-about
+        +label({ text: more_about_header, mods: 'h4-style', tag: 'header'}).more-about__header
+        p.more-about__text #{more_about_text}
+        .more-about__button
+            +button-more

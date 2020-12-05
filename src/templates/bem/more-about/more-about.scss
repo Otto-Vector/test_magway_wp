@@ -1,0 +1,25 @@
+
+.more-about {
+  display: flex;
+  flex-direction: column;
+
+  @include size(rem(275),auto);
+  border-right: 1px solid #e5e5e5;
+  padding: {
+    right: rem(35);
+    bottom: rem(20);
+  };
+  margin-left: rem(35);
+
+  &__header {
+    margin-bottom: rem(10);
+  }
+
+  &__text {
+    padding-bottom: rem(15);
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+}

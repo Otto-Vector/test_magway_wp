@@ -1,0 +1,46 @@
+.elements {
+
+  &__top {
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_row {
+    }
+  }
+
+  &__like-buttons-area {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    
+  }
+  
+  &__rate-button-area {
+    display: flex;
+
+    & .rate-button {
+      margin: 0 5px;
+    }
+  }
+
+  &__button-area {
+    display: flex;
+    flex-flow: column wrap;
+
+    &_section {
+    flex-flow: row nowrap;
+
+    & .button {
+      margin-right: 20px;
+    }
+    }
+  }
+
+  &__footer {
+
+  }
+}

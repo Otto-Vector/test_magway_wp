@@ -1,0 +1,18 @@
+
+mixin contact-item(mode='phone', text)
+    -
+        text = text || "(123) 456-7890";
+        let url = '',
+            newFont = false;
+
+        if (mode == 'phone')  url = require('@images/phone_icon.png')
+        if (mode == 'fax')    url = require('@images/fax_icon.png')
+        if (mode == 'mail') { url = require('@images/mail_icon.png'); newFont = 'newFont'}
+        if (mode == 'home') { url = require('@images/home_icon.png'); newFont = 'newFont'}
+
+
+    .contact-item
+        .contact-item__icon
+            img( src = url )
+        span.contact-item__text(class = newFont) #{text}
+

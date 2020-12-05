@@ -1,0 +1,21 @@
+extends ../main
+
+//- block head
+//-   link(href="assets/css/minimum.css" rel="stylesheet")
+
+block variables
+  - var pageTitle = 'Minimal Website Design';
+  - var description = 'Main page';
+  - var pageClass = 'main-page';
+
+block content
+  section
+    header.content-header
+      +label({
+        text: "FEATURED PRODUCTS",
+        mods: "h3-style"
+      })
+    .content-container
+      +slider
+      +infocard
+      //- img(src=require('@images/5377691184.jpg') alt="logo")

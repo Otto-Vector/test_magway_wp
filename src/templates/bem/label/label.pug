@@ -1,0 +1,49 @@
+//- Все примеси в этом файле должны начинаться c имени блока (label)
+
+mixin label(params)
+
+  //- Принимает: {object} //работает без параметров
+  //-   text   : {string} - текст заголовка
+  //-   mods   : {string} - список модификаторов ((h1||h2||h3||h4)-style)
+  //-   tag    : {string} - тег (по умолчанию h3 или берется из первых двух символов mods)
+
+  //- Вызов:
+        +label({
+          text: "Title",
+          mods: "h1-style",
+          tag: "label"
+          })
+
+    //- БЛОК ПРИСВОЕНИЯ БАЗОВЫХ ЗНАЧЕНИЙ -//
+  -
+    // список модификаторов
+    let block_name = 'label',
+        main_class = block_name;
+
+    //Проверка на миксин без параметров так как 
+    //при пустом params, не деструктурируются значения по умолчанию
+    if (!params) {
+      var params = {text: 'empty params in ='+block_name+'='};
+    }
+    //деструктуризация params в переменные и задание им значений по умолчанию
+    let {
+      text = '',
+      mods = 'h3-style',
+      tag  = mods[0]+mods[1] //первые два символа из mods
+         } = params;
+
+
+    //- ФУНКЦИОНАЛЬНЫЙ БЛОК -//
+
+    if(mods !== '') {
+      let modsList = mods.split(',');
+      for (let i = 0; i < modsList.length; i++) {
+        main_class += ' ' + block_name + '_' + modsList[i].trim();
+      }
+    }
+
+
+    //- БЛОК ВЫВОДА -//
+
+  #{tag}(class=main_class)&attributes(attributes)!= text
+    block

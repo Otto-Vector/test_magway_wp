@@ -1,0 +1,14 @@
+
+.news {
+  @include size(rem(275),auto);
+  border-right: 1px solid #e5e5e5;
+  padding: {
+    right: rem(8);
+    bottom: rem(12);
+  };
+
+  &__header {
+    margin-bottom: rem(10);
+  }
+
+}

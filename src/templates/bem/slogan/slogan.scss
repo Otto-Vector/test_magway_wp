@@ -1,0 +1,15 @@
+.slogan {
+  border-left: 1px solid #cac8c5;
+  padding: rem(7) rem(25);
+  font-family: $newFont;
+
+  &_orange {
+    color: $orangeColor;
+  }
+
+  &__h3 {
+    font-family: $infotextFont;
+    font-size: rem(10);
+    color: $gray-color;
+  }
+}

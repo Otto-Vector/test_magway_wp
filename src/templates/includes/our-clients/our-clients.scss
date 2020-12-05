@@ -1,0 +1,20 @@
+.our-clients {
+  border: none;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-bottom: rem(20);
+
+  &__header {
+    text-align: left;
+    font-family: $newFont;
+    font-weight: bold;
+    padding: 0 rem(5);
+    margin-left: rem(37);
+    font-size: rem(10);
+    color: #343434;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+}

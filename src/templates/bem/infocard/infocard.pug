@@ -1,0 +1,13 @@
+-
+    var img_fist_title = "Preview Release Available!";
+    var img_second_title = "Lispum Data Comoodo";
+mixin infocard
+    .infocard
+        .infocard__img-wrap
+            +label({text: img_fist_title, mods: "h2-style"}).infocard_white
+            +label({text: img_second_title, mods: "h1-style"}).infocard_white
+        .infocard__content
+            p The mission of Orlin Research, Inc. is to produce software products that multiply the power and efficiency of empirical scientific research in the social sciences.
+            p A central goal is to expand access to complex data sources and to the advanced methods of scientific investigation needed to analyze them.
+        .infocard__button
+            +button-more

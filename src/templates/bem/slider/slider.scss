@@ -1,0 +1,48 @@
+.slider {
+  border: 1px solid $slider-gray-border1;
+  padding: 1px;
+  width: rem(445);
+  margin-right: rem(25);
+  margin-bottom: rem(10);
+
+  &__wrap {
+    border: 1px solid $slider-gray-border2;
+  }
+
+  &__img {
+    @include size(100%,rem(245));
+  }
+
+  &__nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: rem(14) rem(22);
+    background: white;
+  }
+
+  &__button-left, &__button-right {
+    @include size(rem(23));
+    background-position: center;
+    background-image: url("~@images/orange_arrow.png");
+    background-color: inherit;
+    background-size: 100%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+      @include duration($duration);
+    }
+  }
+
+  &__button-right {
+    transform: rotateY(180deg);
+  }
+
+  &__text {
+    font-family: $tahomaFont;
+    font-size: rem(13);
+    font-weight: bold;
+  }
+
+}

@@ -1,0 +1,20 @@
+-
+    var title ='Lorem ipsum dolor sit amet';
+    var overTitle ='consectetur adipisicing elit, sed do eiusmod tempor incididunt';
+-
+  var navItems = [
+    {name: 'HOME', url: "#"},
+    {name: 'PRODUCTS', url: "#"},
+    {name: 'NEWS', url: "#"},
+    {name: 'ABOUT US', url: "#"},
+    {name: 'CONTACT US', url: "#"}
+  ];
+
+block header
+    .header
+        .header__wrapper
+            +logo
+        +slogan(title,overTitle)
+
+        .nav-wrapper
+            +navbar(navItems)

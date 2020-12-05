@@ -1,0 +1,102 @@
+extends ../main
+
+block variables
+  - var pageTitle = 'Elements';
+  - var description = 'Elements page';
+  - var pageClass = 'elem-page';
+
+block content
+  section
+    .container
+
+      +logo
+      //section
+      //  +label({text: "This one is the sub-section or widget title", mods: "h1-style"})
+      //section
+      //  +label({text: "Next one is the item title inside widgets", mods: "h2-style"})
+      //section
+      //  +label({text: "This is a label or CTA text", mods: "h3-style"})
+      //section
+      //  p This is the body text which is used for most of the design, like paragraphs, lists, etc.
+      //section.elements__content
+      //  .elements__content_row
+      //    section
+      //      +input-field({
+      //        title: "text field",
+      //        placeholder: "Email",
+      //        type: "email"
+      //        })
+      //      +input-field({
+      //        title: "text field",
+      //        value: "This is pretty awesome!"
+      //        })
+      //      +input-field({
+      //        title: "dropdown",
+      //        mods: "dropdown",
+      //        value: "Сколько гостей"
+      //        })(readonly)
+      //      +input-field({
+      //        title: "masked text field",
+      //        type: "date"
+      //        })
+      //    section
+      //      +input-date-dropdown({
+      //        title_1: "Input Date",
+      //        value_2: "19.08.2019"
+      //        })
+      //      +input-field({
+      //        title: "filter date dropdown",
+      //        mods: "medium, dropdown",
+      //        value: "19 авг - 23 авг"
+      //        })(readonly)
+      //      +input-field({
+      //        title: "subscribtion text field",
+      //        mods: "medium, subscribe",
+      //        type: "email",
+      //        placeholder: "Email"
+      //        })
+      //  .elements__content_row
+      //    section
+      //      +label({text: "checkbox buttons"})
+      //    section
+      //      +checkbox({title: "Можно курить"})
+      //      +checkbox({title: "Можно с питомцами "})(checked)
+      //      +checkbox({title: "Можно пригласить гостей (до 10 человек)"})(checked)
+      //      +checkbox({title: "Disabled "})(disabled)
+      //      +checkbox({title: "Disabled / Checked"})(disabled, checked)
+      //    section
+      //      +label({text: "radio buttons"})
+      //    section
+      //      +radio-button({title: "Мужчина", title_2: "Женщина", name: "lu"})
+      //    section
+      //      +label({text: "toggle"})
+      //    section
+      //      +toggle({title: "Получать спецпредложения"})(checked)
+      //      +toggle({title: "Получать спецпредложения"})
+      //    section
+      //      +label({text: "like button"})
+      //    section.elements__like-buttons-area
+      //      +like-button({value: 2})
+      //      +like-button({value: 12, mods: "active"})
+      //    section
+      //      +label({text: "rate button"})
+      //    section.elements__rate-button-area
+      //      +rate-button({value: 4, id: "number_5"})
+      //      +rate-button({value: 5, id: "number_4"})
+      //  .elements__content_row
+      //    section
+      //      +label({text: "range slider"})
+      //    section
+      //      +label({text: "buttons"})
+      //    section.elements__button-area
+      //      section.elements__button-area_section
+      //        +button()
+      //        +button({mods: "filled, hovered"})
+      //      section.elements__button-area_section
+      //        +button({mods: "bordered"})
+      //        +button({mods: "bordered, hovered"})
+      //      section.elements__button-area_section
+      //        +button({mods: "none"})
+      //        +button({mods: "none, hovered"})
+
+      //- img(src=require('@images/5377691184.jpg') alt="logo")

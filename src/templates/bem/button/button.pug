@@ -1,0 +1,56 @@
+
+mixin button(params)
+
+  //- без параметров работает
+  //- Принимает:
+  //-   params {object}
+  //-     value: ''           {integer} - количество звёзд
+  //-     id   : ''           {string} - идентификатор свойства, к которому принадлежит рейтинг
+
+  //- Вызов:
+      +button({
+        value: '',
+        id : ''
+      }) 
+
+
+    //- БЛОК ПРИСВОЕНИЯ БАЗОВЫХ ЗНАЧЕНИЙ -//
+  -
+    let block_name  = 'button',
+        main_class  = block_name,
+        link_class  = block_name + '__link',
+        text_class  = block_name + '__text',
+        text_mods   = '';
+
+    //Проверка на миксин без параметров так как 
+    //при пустом params, не деструктурируются значения по умолчанию
+    if (!params) {
+      var params = { text: 'click me' };
+    }
+
+    //деструктуризация params в переменные и задание им значений по умолчанию
+    let {
+      link       = 'http://localhost:8081/',
+      text       = 'click me',
+      mods       = 'filled'
+               } = params;
+
+
+    //- ФУНКЦИОНАЛЬНЫЙ БЛОК -//
+    //обработка модификаций главного блока
+    if(mods !== '') {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        text_mods += ' ' + text_class + '_' + modsList[i].trim();
+      }
+    }
+
+  //- БЛОК ВЫВОДА -//
+
+  span(class= main_class)
+    a(class= link_class href= link)
+      +label({
+       text: text,
+       mods: "h3-style",
+       tag : "span"
+       })(class=text_class+text_mods)

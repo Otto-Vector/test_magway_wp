@@ -1,0 +1,158 @@
+@import "utils/reset";
+@import "utils/libs";
+@import "utils/fonts";
+@import "utils/vars";
+@import "utils/mixins";
+//    background-image: url('~@images/5377691184.jpg');
+
+html { //уменьшение размера текста, в зависимости от ширины экрана
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: $mainFontSize;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: $mainFontSize - 1px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: $mainFontSize - 2px;
+  }
+}
+
+body {
+  background: $body-background;
+  margin: 0;
+  padding: 10px;
+  font-family: $mainFont;
+  // background-color: green;
+//  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { text-decoration: none; }
+
+// ul, li {
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+// }
+.unselectable {
+  -moz-user-select: none;
+  -html-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+////////////////ИКОНОЧНЫЙ ШРИФТ//////////////////////////////
+//.for-icons:after {
+//  // position: absolute;
+//  content: 'arrow_forward';
+////  display: inline-block;
+//  font-family: "Material Icons";
+//  color: $dark-75;
+//  // left: 10px;
+//  // top: 10px;
+//  font-size: 24px;
+//}
+// .material-icons {
+//   font-family: 'Material Icons';
+//   font-weight: normal;
+//   font-style: normal;
+//   font-size: 24px;  /* Preferred icon size */
+//   display: inline-block;
+//   line-height: 1;
+//   text-transform: none;
+//   letter-spacing: normal;
+//   word-wrap: normal;
+//   white-space: nowrap;
+//   direction: ltr;
+
+//   /* Support for all WebKit browsers. */
+//   -webkit-font-smoothing: antialiased;
+//   /* Support for Safari and Chrome. */
+//   text-rendering: optimizeLegibility;
+
+//   /* Support for Firefox. */
+//   -moz-osx-font-smoothing: grayscale;
+
+//   /* Support for IE. */
+//   font-feature-settings: 'liga';
+// }
+//////////////////////////////////////////////////
+
+//каждый блок на сайте всегда правильно делать через это
+section, .section {
+  position: relative;
+
+  //padding: rem(10) 0; //использование функции rem() значение которой зависит от размера шрифта
+
+  // @media screen and (max-width: $desktopWidth) {
+  //   padding: 36px 0;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   padding: 28px 0;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+  //   padding: 20px 0;
+  // }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: white;
+  //min-height: 100vh;
+  max-width: rem(1000);
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+  border-top: 8px solid $orangeColor;
+  padding: rem(40) rem(35) rem(15) rem(35);
+}
+
+.content-header {
+  margin-bottom: rem(10);
+}
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $border-gray-color;
+  padding: rem(35) 0;
+  //min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  //margin: 0 50px; //временный параметр
+  max-width: $maxDesktopWidth;
+
+  //меняет размеры основного экрана контента
+  @media screen and (max-width: $desktopWidth) {
+    max-width: $smDesktopWidth;
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: $tableWidth;
+  }
+  @media screen and (max-width: $tableWidth) {
+    max-width: $phoneWidth;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    max-width: $smPhoneWidth;
+  }
+}
+
+/////////////////////////////////////////////////
+////////// Modules//////////////////////////////
+@import 'bem/blocks-library/blocks-library';
+@import "includes/includes";
+//@import 'pages/elements';
