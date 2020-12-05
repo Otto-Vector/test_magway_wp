@@ -1,47 +1,11 @@
 // Fonts here
 
 @font-face {
-  font-family: 'Helvetica CE';
-  src: url('~@fonts/Helvetica_CE_Regular.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot");
+  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy") format("svg");
 }
-
-@font-face {
-  font-family: 'Novecento WideLight';
-  src: url('~@fonts/Novecento_WideLight.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Helvetica Narrow';
-  src: url('~@fonts/Helvetica_Narrow_CE.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Helvetica NeueLT Medium';
-  src: url('~@fonts/Helvetica_NeueLT_Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Interstate Cond Mono';
-  src: url('~@fonts/Interstate_Cond_Mono.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Swiss721BT';
-  src: url('~@fonts/Swiss721BT.ttf') format('truetype');
-}
-
-
-
-//@font-face {
-//  font-family: 'Material Icons';
-//  font-style: normal;
-//  font-weight: 400;
-//  src: local('Material Icons'),
-//  local('MaterialIcons-Regular'),
-//  url(~@fonts/MaterialIcons/MaterialIcons.svg) format('svg'),
-//  url(~@fonts/MaterialIcons/MaterialIcons.woff) format('woff'),
-//  url(~@fonts/MaterialIcons/MaterialIcons.ttf) format('truetype');
-//}
-
-
-//@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:100,300,400");

@@ -1,16 +1,12 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: rem(-5);
+  padding-top: rem(76);
+  text-align: center;
 
-  &__wrapper {
-    margin-right: rem(40);
+  &__title {
+    margin: rem(12) auto;
   }
-}
 
-.nav-wrapper {
-  width: 100%;
-  margin-top: rem(15);
-  margin-left: rem(5);
+  &__overTitle {
+    margin: rem(12) auto;
+  }
 }

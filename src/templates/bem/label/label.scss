@@ -1,39 +1,24 @@
 //////////////ЗАГОЛОВКИ////////////////////
 .label {
   margin: 0;
-
-  &_h1-style, &_h2-style {
-    font-family: $headerFont;
-  }
+  font-family: $mainFont;
+  font-weight: $mainFontWeight;
 
   &_h1-style {
-    font-family: $h2-style-Font;
-    font-size: rem(29);
-    line-height: rem(36);
-    font-weight: bold;
+    font-size: rem($headerFontSize);
   }
 
   &_h2-style {
-    font-family: $h2-style-Font;
-    font-size: rem(14);
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: rem($featureFontSize);
   }
 
   &_h3-style {
-    font-family: $tahomaFont;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: rem(9);
-    line-height: rem(9);
-    color: #555656;
+    font-size: rem($mainFontSize);
   }
 
   &_h4-style {
-    font-family: $h4-style-Font;
-    font-weight: bold;
-    font-size: rem(13);
-    line-height: rem(13);
-    color: #616161;
+    font-size: rem($blogHFontSize);
+    font-weight: $boldFontWeight;
   }
+
 }

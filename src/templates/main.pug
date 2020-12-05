@@ -1,38 +1,30 @@
-//include utils/mixins
 include bem/blocks-library/blocks-library
-
 
 block variables
 
 doctype html
 html(lang="en")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1, width=device-width")
-    title #{pageTitle}
-    meta(name="description", content=description)
-    link(rel="shortcut icon" href=require('@images/favicon.png') type="image/x-icon")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1, width=device-width")
+        title #{pageTitle}
+        meta(name="description", content=description)
+        link(rel="shortcut icon" href=require('@images/favicon.png') type="image/x-icon")
 
-    block head
+        block head
 
-  body(class=pageClass)
-    .wrapper
-      include includes/header/header
-      block header
+    body(class=pageClass)
+        .wrapper
+            include includes/header/header
+            block header
 
 
-      .content-wrapper
-        block content
+            .content-wrapper
+                block content
 
-      .about-wrapper
-        include includes/about/about
-        block about
 
-      include includes/our-clients/our-clients
-      block our-clients
+            include includes/footer/footer
+            block footer
 
-      include includes/footer/footer
-      block footer
-
-    block script
+        block script

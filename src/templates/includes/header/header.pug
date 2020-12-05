@@ -1,20 +1,16 @@
 -
-    var title ='Lorem ipsum dolor sit amet';
-    var overTitle ='consectetur adipisicing elit, sed do eiusmod tempor incididunt';
--
-  var navItems = [
-    {name: 'HOME', url: "#"},
-    {name: 'PRODUCTS', url: "#"},
-    {name: 'NEWS', url: "#"},
-    {name: 'ABOUT US', url: "#"},
-    {name: 'CONTACT US', url: "#"}
-  ];
+    var headerTitle ="Our Best Blogs Ever";
+    var overTitle ="“Try our blog to find the best tips and tricks to select your gift”";
+
 
 block header
-    .header
-        .header__wrapper
-            +logo
-        +slogan(title,overTitle)
+    header.header
+        +label({
+            text: headerTitle,
+            mods:"h1-style"
+        }).header__title
+        +label({
+            text: overTitle,
+            mods:"h3-style"
+        }).header__overTitle
 
-        .nav-wrapper
-            +navbar(navItems)
