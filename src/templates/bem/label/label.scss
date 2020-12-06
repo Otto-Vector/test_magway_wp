@@ -3,6 +3,7 @@
   margin: 0;
   font-family: $mainFont;
   font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
 
   &_h1-style {
     font-size: rem($headerFontSize);
@@ -10,6 +11,7 @@
 
   &_h2-style {
     font-size: rem($featureFontSize);
+    line-height: 116%;
   }
 
   &_h3-style {

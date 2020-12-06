@@ -1,12 +1,13 @@
 .header {
   padding-top: rem(76);
+  padding-bottom: rem(60);
   text-align: center;
 
   &__title {
-    margin: rem(12) auto;
+    padding: rem(12) 0;
   }
 
   &__overTitle {
-    margin: rem(12) auto;
+    padding: rem(12) 0;
   }
 }

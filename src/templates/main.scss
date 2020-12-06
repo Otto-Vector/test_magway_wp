@@ -12,10 +12,10 @@ html { //уменьшение размера текста, в зависимос
     font-size: $mainFontSize;
   }
   @media screen and (max-width: $tableWidth) {
-    font-size: $mainFontSize - 1px;
+    font-size: $mainFontSize - 2px;
   }
   @media screen and (max-width: $phoneWidth) {
-    font-size: $mainFontSize - 2px;
+    font-size: $mainFontSize - 4px;
   }
 }
 
@@ -48,15 +48,22 @@ section, .section {
 .content-header {
   margin-bottom: rem(10);
 }
-//.content-container {
-//  display: flex;
-//  align-items: flex-start;
-//  flex-wrap: wrap;
-//  justify-content: space-between;
-//}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.blogs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: $desktopWidth;
+  flex-wrap: wrap;
+  padding: rem(40) 0 rem(20) 0;
+
+   @media screen and (max-width: 1169px) {
+    justify-content: center;
+  }
 }
 
 .container {

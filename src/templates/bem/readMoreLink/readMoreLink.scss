@@ -1,0 +1,23 @@
+.readMoreLink {
+    text-align: left;
+    display: flex;
+
+  &__link {
+    align-self: flex-end;
+    @include duration($duration/2);
+
+    &:hover {
+      color: gray;
+    }
+  }
+
+  &_whiteMode {
+    color: $white-color;
+    font-size: rem($mainFontSize);
+  }
+
+  &_blackMode {
+    color: $black-color;
+    font-size: rem($smallFontSize);
+  }
+}

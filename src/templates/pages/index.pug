@@ -1,17 +1,25 @@
 extends ../main
 
 block variables
-    - var pageTitle = "Test for ";
+    - var pageTitle = "Test for Magway";
     - var description = "Main page";
     - var pageClass = "main-page";
 
 block content
-    section.feature
-        header.feature__header
-            +label({
-                text: "FEATURED PRODUCTS",
-                mods: "h3-style"
+    section.content-wrapper
+        include ../includes/feature/feature
+        block feature
+
+        section.blogs-wrapper
+            +blog({
+            head: "Database to find the gifts for your girlfriend",
+            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore lasfj aldf ja;ldf kja;dkj",
+            link: "#"
+            })
+            +blog({
+            head: "How Artificial Intelligence read your mind to find the best gift",
+            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore lasfj aldf ja;ldf kja;dkj",
+            link: "#"
             })
 
-    section.blogs
 

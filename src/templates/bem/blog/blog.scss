@@ -1,0 +1,39 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  @include size( rem(570), rem(290) );
+  min-width: rem(490);
+  background: $white-color;
+  //значение из figma, но на ярком экране ничего не видно
+  //box-shadow: rem(10) rem(10) rem(15) rgba(0, 0, 0, 0.05);
+  //поменял на более чёткую тень
+  box-shadow: rem(5) rem(5) rem(10) rgba(0, 0, 0, 0.35);
+  padding: rem(48);
+  margin-bottom: rem(20);
+
+
+  &__title {
+    flex-grow: 0;
+    height: rem(68);
+    padding-bottom: rem(15);
+    overflow : hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__summary {
+    flex-grow: 0;
+    height: rem(55);
+    overflow : hidden;
+    text-overflow: ellipsis;
+    //элипс на две строки работает
+    //только на браузерах с поддержкой webkit
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  &__link {
+    flex-grow: 3;
+  }
+}

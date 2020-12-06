@@ -1,0 +1,12 @@
+
+mixin readMoreLink(link = "#", mode = "whiteMode")
+    -
+        let readMore = "Read More",
+        blockName = "readMoreLink";
+        link_class = blockName + "__link"
+        mode = blockName + "_" + mode;
+
+
+    .readMoreLink&attributes(attributes)
+        a( class = mode class = link_class  href = link )!= readMore
+

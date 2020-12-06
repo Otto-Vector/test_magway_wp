@@ -1,0 +1,10 @@
+block feature
+    .feature
+        img(alt="picture" src=require("@images/image1.jpg")).feature__image
+        figure.feature__figure
+            figcaption.feature__signature Mr. John Doe
+            +label({
+                text: "The best way to wish your wife",
+                mods: "h2-style"
+            }).feature__title
+            +readMoreLink("#","whiteMode").feature__link

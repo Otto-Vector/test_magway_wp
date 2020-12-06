@@ -1,0 +1,46 @@
+
+mixin blog(params)
+
+    //- Принимает : {object} //работает без параметров
+    //-   head    : {string} - текст заголовка
+    //-   summary : {string} - текст блога
+    //-   link    : {string} - линк на раскрытие блога
+
+    //- Вызов:
+          +blog({
+            head: "Title",
+            summary: "Lorem ipsum...",
+            link: "https://..."
+            })
+
+    //- БЛОК ПРИСВОЕНИЯ БАЗОВЫХ ЗНАЧЕНИЙ -//
+    -
+        // список модификаторов
+        let block_name = 'blog',
+            main_class = block_name,
+            header_class = block_name+'__title',
+            text_class = block_name+'__summary',
+            link_class = block_name+'__link';
+
+        //Проверка на миксин без параметров так как
+        //при пустом params, не деструктурируются значения по умолчанию
+        if (!params) {
+            var params = {summary: 'empty params in ='+block_name+'='};
+        }
+
+        //деструктуризация params в переменные и задание им значений по умолчанию
+        let {
+            head = "Title here",
+            summary = "Lorem ipsum...",
+            link = "#"
+            } = params;
+
+
+
+
+    //- БЛОК ВЫВОДА -//
+
+    article(class = main_class)
+        +label({text: head, mods: "h4-style", tag: "header"})(class = header_class)
+        div(class = text_class) #{summary}
+        +readMoreLink(link,"blackMode")(class = link_class)

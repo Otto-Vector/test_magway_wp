@@ -1,0 +1,20 @@
+.buttonShowMore {
+  text-align: center;
+  @include size(rem(198), rem(54));
+  background-color: $white-color;
+  border: 1px solid $orange-color;
+  border-radius: rem(5);
+
+  color: $orange-color;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  @include duration($duration);
+
+  &:hover {
+    color: $white-color;
+    background: $orange-color;
+  }
+}

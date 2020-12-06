@@ -1,0 +1,42 @@
+.feature {
+  display: flex;
+  justify-content: center;
+  max-width: rem(1170);
+  background: $feature-background;
+  color: $white-color;
+
+  @media screen and (max-width: 830px) {
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    flex-basis: rem(370);
+    flex-shrink: 0;
+  }
+
+  &__figure {
+    margin: rem(60) rem(200) auto rem(75);
+    flex-shrink: 1;
+
+    @media screen and (max-width: 970px) {
+      margin: rem(30) rem(100) rem(30) rem(50);
+    }
+  }
+
+  &__signature {
+    font-size: $smallFontSize;
+    padding-bottom: rem(25);
+
+    @media screen and (max-width: 970px) {
+      padding-bottom: rem(15);
+    }
+  }
+
+  &__title {
+      padding-bottom: rem(60);
+
+    @media screen and (max-width: 970px) {
+      padding-bottom: rem(30);
+    }
+  }
+}
