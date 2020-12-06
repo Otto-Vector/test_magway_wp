@@ -1,9 +1,13 @@
-## Project Structure:
+## TEST FOR MAGWAY
 
-* `src/index.html` - main app HTML
-* `src/assets/scss` - put custom app SCSS styles here. Don't forget to import them in `index.js`
-* `src/assets/css` - the same as above but CSS here. Don't forget to import them in `index.js`
-* `src/assets/img` - put images here. Don't forget to use correct path: `assets/img/some.jpg`
-* `src/js` - put custom app scripts here
-* `src/index.js` - main app file where you include/import all required libs and init app
-* `static/` - folder with extra static assets that will be copied into output folder
+ЗАДАНИЕ:
+
+1. Сверстать адаптивно блок из <a href='https://www.figma.com/file/JWTdV6sNq0XSmoLw2jcRUp/Freebie-Gift-Store-Website-Template-Copy?node-id=14635%3A61'>макета</a>
+2. Реализовать подгрузку новых записей по нажатию на кнопку "SHOW MORE" с https://jsonplaceholder.typicode.com (/posts) по 6 шт
+
+
+
+РЕЗУЛЬТАТ:
+
+<a href='https://otto-vector.github.io/test_magway_wp/dist/index.html'>ПОСМОТРЕТЬ СЮДА</a>
+
