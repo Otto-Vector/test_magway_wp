@@ -12,6 +12,8 @@
   padding: rem(48);
   margin-bottom: rem(20);
 
+  @include duration($duration);
+
 
   &__title {
     flex-grow: 0;
@@ -23,7 +25,8 @@
 
   &__summary {
     flex-grow: 0;
-    height: rem(55);
+    //height: rem(55);
+    height: 3rem;
     overflow : hidden;
     text-overflow: ellipsis;
     //элипс на две строки работает

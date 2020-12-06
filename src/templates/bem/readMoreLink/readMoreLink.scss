@@ -1,6 +1,6 @@
 .readMoreLink {
-    text-align: left;
-    display: flex;
+  text-align: left;
+  display: flex;
 
   &__link {
     align-self: flex-end;
@@ -8,6 +8,13 @@
 
     &:hover {
       color: gray;
+    }
+
+    &:focus {
+      outline: none;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: gray;
     }
   }
 

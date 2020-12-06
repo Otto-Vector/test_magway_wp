@@ -1,6 +1,7 @@
+
 .buttonShowMore {
-  text-align: center;
   @include size(rem(198), rem(54));
+
   background-color: $white-color;
   border: 1px solid $orange-color;
   border-radius: rem(5);
@@ -9,6 +10,7 @@
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   text-transform: uppercase;
+  text-align: center;
 
   cursor: pointer;
   @include duration($duration);
@@ -16,5 +18,10 @@
   &:hover {
     color: $white-color;
     background: $orange-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 1px 1px 2px black;
   }
 }
